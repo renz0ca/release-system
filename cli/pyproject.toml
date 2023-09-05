@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rzo-texttools"
+version = "0.0.1"
+description = "A simple CLI and associated libraries to manage text."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "renzoca" }]
+keywords = ["text validation", "text compilation"]
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pre-commit==3.4.0"]
+
+[project.urls]
+Repository = "https://github.com/renz0ca/release-system"
+
+[project.scripts]
+compile-text = "texttools.cli:compile_cli"
+validate-text = "texttools.cli:validate_cli"
+
+[tool.setuptools.packages.find]
+include = ["texttools"]
+
+[tool.ruff]
+select = ["E", "F", "W", "I"]
