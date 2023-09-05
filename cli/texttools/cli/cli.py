@@ -24,7 +24,7 @@ def parse_args_validate():
         dict: The program's command line arguments.
     """
     parser = argparse.ArgumentParser(
-        description="A small command line tool for compiling text."
+        description="A small command line tool for validating text."
     )
     parser.add_argument("-t", "--text", type=str, required=True)
     return parser.parse_args()
@@ -51,7 +51,7 @@ def parse_args_compile():
         dict: The program's command line arguments.
     """
     parser = argparse.ArgumentParser(
-        description="A small command line tool for validating text."
+        description="A small command line tool for compiling text."
     )
     parser.add_argument("-t", "--text", type=str, required=True)
     return parser.parse_args()
