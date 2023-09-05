@@ -1,6 +1,6 @@
 import re
 
-from . import Validator
+from .Validator import Validator
 
 
 class RegexValidator(Validator):

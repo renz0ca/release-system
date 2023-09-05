@@ -21,11 +21,11 @@ dev = ["pre-commit==3.4.0"]
 Repository = "https://github.com/renz0ca/release-system"
 
 [project.scripts]
-compile-text = "textcli:compile_cli"
-validate-text = "textcli:validate_cli"
+compile-text = "texttools.cli:compile_cli"
+validate-text = "texttools.cli:validate_cli"
 
 [tool.setuptools.packages.find]
-include = ["texttools", "textcli"]
+include = ["texttools"]
 
 [tool.ruff]
 select = ["E", "F", "W", "I"]

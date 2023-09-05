@@ -1,6 +1,6 @@
 import re
 
-from . import Compiler
+from .Compiler import Compiler
 
 
 class RegexCompiler(Compiler):
