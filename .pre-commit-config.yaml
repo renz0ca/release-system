@@ -11,3 +11,8 @@ repos:
   rev: v0.0.287
   hooks:
     - id: ruff
+      name: "ruff (cli)"
+      files: '^cli/.*\.py'
+    - id: ruff
+      name: "ruff (viewer)"
+      files: '^viewer/.*\.py'
